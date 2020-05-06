@@ -1,49 +1,105 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>empty</title>
-<style type="text/css">
-<!--
-body {
-	background: #ffffff;
-	margin: 0; /* Es empfiehlt sich, margin (Rand) und padding (Auffüllung) des Body-Elements auf 0 einzustellen, um unterschiedlichen Browser-Standardeinstellungen Rechnung zu tragen. */
-	padding: 0;
-	text-align: center; /* Hierdurch wird der Container in IE 5*-Browsern zentriert. Dem Text wird dann im #container-Selektor die Standardausrichtung left (links) zugewiesen. */
-	color: #000000;
-	font-family: "Courier New", Courier, monospace;
-	font-size: 11pt;
-}
- #container {
-	padding-top: 80px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 0px;
-}
-.small {
-	font-size: 9pt;
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-}
-.displaynone {
-	display:none;
-}
+    <title>empty</title>
+    <style type="text/css">
+      body {
+        background: #ffffff;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        color: #000000;
+        font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+          monospace;
+        font-size: 11pt;
+        line-height: 1.7;
+      }
+      a {
+        color: #38a8e0;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #683b11;
+      }
+      .container {
+        padding: 1rem;
+        padding-top: 7rem;
+      }
+      .header {
+        margin-bottom: 3rem;
+      }
+      .header span {
+        opacity: 0;
+        animation: loading 1.3s infinite;
+      }
+      .header span.two {
+        animation-delay: 0.2s;
+      }
+      .header span.three {
+        animation-delay: 0.3s;
+      }
+      .footer {
+        margin-top: 5rem;
+        font-size: 0.85rem;
+      }
+      .displaynone {
+        display: none;
+      }
+      .inline-img {
+        display: inline-block;
+        width: 4rem;
+        height: auto;
+        border-radius: 50%;
+      }
 
--->
-</style></head>
+      @keyframes loading {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
 
-<body class="oneColFixCtr">
-
-<div id="container">
-  /// searching... ///<br><br><br><br><br><br><br>
-  <div class="small">
-  Signalwerk GmbH | Stefan Huber | Badenerstrasse 585| 8048 Zürich | Switzerland
-  | +41 78 <span class="displaynone">null</span>744<span class="displaynone">0</span> 37<span class="displaynone">15</span> 38
-  | <script type="text/javascript"><!--
-var ewyfltu = ['w','k',':','l','s','m','"','e','s','l','a','h','n',' ','i','"','s','r','f','c','e',' ','k','s','w','m','e','o','s','g','r','a','.','h','i','<','.','t','>','h','a','a','l','h','>','s','a','i','g','h','a','l','l','/','c','<','=','r','@','"','n','i','@','=','"','a','e','c'];var eshfmwo = [25,28,15,35,37,42,32,41,51,56,36,17,22,2,11,40,16,27,6,62,5,33,60,48,57,9,26,14,19,21,4,23,29,31,44,64,61,13,47,49,43,10,12,3,67,38,66,52,53,63,55,45,24,65,34,0,39,59,18,8,54,20,50,7,46,1,58,30];var zhqrxny= new Array();for(var i=0;i<eshfmwo.length;i++){zhqrxny[eshfmwo[i]] = ewyfltu[i]; }for(var i=0;i<zhqrxny.length;i++){document.write(zhqrxny[i]);}
-// --></script>
-</div>
-<noscript>Please enable Javascript to see the email address</noscript>
-<!-- end #container --></div>
-
-</body>
+  <body>
+    <div class="container">
+      <header class="header">
+        /// searching<span class="one">.</span><span class="two">.</span
+        ><span class="three">.</span> ///
+      </header>
+      <a href="https://github.com/signalwerk/">
+        <img
+          class="inline-img"
+          src="http://avatar.signalwerk.ch/latest/signalwerk.svg"
+        />
+      </a>
+      <footer class="footer">
+        Signalwerk GmbH | Stefan Huber | Badenerstrasse 585 | 8048 Zürich |
+        Switzerland | +41 78 <span class="displaynone">null</span>744<span
+          class="displaynone"
+          >0</span
+        >
+        37<span class="displaynone">15</span> 38 |
+        <script>
+          document.write(
+            decodeURIComponent(
+              "%" +
+                "3c6120687265663d226d61696c746f3a7368407369676e616c7765726b2e6368223e7368407369676e616c7765726b2e63683c2f613e"
+                  .match(/.{1,2}/g)
+                  .join("%")
+            )
+          );
+        </script>
+        <noscript>Please enable Javascript to see the email address</noscript>
+      </footer>
+    </div>
+  </body>
 </html>
